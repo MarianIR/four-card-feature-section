@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.main-section {
+  margin: 2rem auto;
+  width: 90%;
+}
+.main-section .text-article {
+  width: 100%;
+  text-align: center;
+}
+.main-section .text-article .main-header {
+  font-weight: 200;
+  font-size: clamp(2rem, 7vw, 3.5rem);
+  color: hsl(229, 6%, 66%);
+}
+.main-section .text-article .second-header {
+  font-weight: bold;
+  font-size: clamp(2rem, 7vw, 3.5rem);
+  color: hsl(234, 12%, 34%);
+}
+.main-section .text-article .article-paragraph {
+  margin: 2rem auto 4rem;
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+  line-height: 1.5;
+  color: hsl(229, 6%, 66%);
+  max-width: 50rem;
+}
+.main-section .categories {
+  margin: 2rem auto;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .main-section .categories {
+    width: 100rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 2rem;
+  }
+}
+.main-section .categories .supervisor {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  border-top: 0.4rem solid hsl(180, 62%, 55%);
+}
+.main-section .categories .team-builder {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-top: 0.4rem solid hsl(0, 78%, 62%);
+}
+.main-section .categories .karma {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border-top: 0.4rem solid hsl(34, 97%, 64%);
+}
+.main-section .categories .calculator {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  border-top: 0.4rem solid hsl(212, 86%, 64%);
+}
+.main-section .categories .supervisor,
+.main-section .categories .team-builder,
+.main-section .categories .karma,
+.main-section .categories .calculator {
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 50rem;
+  height: 22rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 1px 3px 15px 5px rgba(0, 0, 0, 0.27);
+}
+@media (min-width: 1024px) {
+  .main-section .categories .supervisor,
+  .main-section .categories .team-builder,
+  .main-section .categories .karma,
+  .main-section .categories .calculator {
+    max-width: 35rem;
+  }
+}
+.main-section .categories .supervisor .text,
+.main-section .categories .team-builder .text,
+.main-section .categories .karma .text,
+.main-section .categories .calculator .text {
+  margin: 2rem;
+  text-align: left;
+}
+.main-section .categories .supervisor .text .categories-header,
+.main-section .categories .team-builder .text .categories-header,
+.main-section .categories .karma .text .categories-header,
+.main-section .categories .calculator .text .categories-header {
+  font-size: 2.5rem;
+  color: hsl(234, 12%, 34%);
+}
+.main-section .categories .supervisor .text .categories-paragraph,
+.main-section .categories .team-builder .text .categories-paragraph,
+.main-section .categories .karma .text .categories-paragraph,
+.main-section .categories .calculator .text .categories-paragraph {
+  font-size: 1.5rem;
+  color: hsl(229, 6%, 66%);
+}
+.main-section .categories .supervisor .image,
+.main-section .categories .team-builder .image,
+.main-section .categories .karma .image,
+.main-section .categories .calculator .image {
+  display: block;
+  margin: 2rem 2rem 0 auto;
+}
+
+.attribution {
+  margin: 4rem auto;
+  text-align: center;
+  font-size: 2rem;
+}
+.attribution a {
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

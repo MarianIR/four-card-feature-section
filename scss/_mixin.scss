@@ -1,0 +1,9 @@
+@mixin container {
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 50rem;
+  height: 22rem;
+  border-radius: 1rem;
+  background-color: $neutralColor3;
+  box-shadow: 1px 3px 15px 5px rgba(0, 0, 0, 0.27);
+}
